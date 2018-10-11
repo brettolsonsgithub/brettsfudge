@@ -2,11 +2,9 @@ import itertools, random, string, unittest
 
 
 class Triangle(object):
-
     @staticmethod
     def triangle_app(a, b, c):
         # PART1 - input validation
-
         for x in (a, b, c):
             # type check- make sure a,b,c is an int
             int(x)
@@ -35,7 +33,6 @@ class Triangle(object):
                 raise ValueError('ERROR: {0} + {1} == {2} is not a triangle'.format(a,b,c))
 
         # PART3 - what kind of tringle is valid input
-
         # is a triangle equilateral
         if len(list(set([a,b,c]))) == 1:
             print '{0}, {1}, {2} - Triangle is equilateral'.format(a,b,c)
